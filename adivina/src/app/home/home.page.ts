@@ -36,7 +36,7 @@ export class HomePage {
 
   reiniciar() {
     //Reiniciar las variables
-    this.num = null;
+    this.num = 0;
     this.mayorMenor = '...';
     this.numSecret = this.numAleatorio(1, 100);
     console.log("El numero secreto es: " + this.numSecret);
