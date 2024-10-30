@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage {
 
   num: number = 0;
@@ -16,7 +17,7 @@ export class HomePage {
     console.log("El numero secreto es: " + this.numSecret);
   }
 
-  numAleatorio(a:number, b:number) {
+  numAleatorio(a: number, b: number) {
     return Math.round(Math.random() * (a - b) + parseInt(a));
   }
 
@@ -30,6 +31,16 @@ export class HomePage {
         this.mayorMenor = 'igual';
       }
     }
+  }
+
+
+  reiniciar() {
+    //Reiniciar las variables
+    this.num = null;
+    this.mayorMenor = '...';
+    this.numSecret = this.numAleatorio(1, 100);
+    console.log("El numero secreto es: " + this.numSecret);
+
   }
 
 }
