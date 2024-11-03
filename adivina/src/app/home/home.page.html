@@ -14,15 +14,15 @@
 
     <ion-card *ngIf="mayorMenor== 'igual'">
       <ion-card-header>
-          ¡¡¡ENHORABUENA!!!
+        ¡¡¡ENHORABUENA!!!
       </ion-card-header>
       <ion-card-content>
-          Has acertado, el numero secreto es {{ num }}
+        Has acertado, el numero secreto es {{ num }}
       </ion-card-content>
     </ion-card>
 
     <ion-button class="boton" expand="block" ngIf="mayorMenor!='igual'" (click)="compruebaNumero()">Adivina</ion-button>
-    <ion-button expand="block"  ngIf="mayorMenor=='igual'" (click)="reiniciar()">Volver a jugar</ion-button>
+    <ion-button expand="block" ngIf="mayorMenor=='igual'" (click)="reiniciar()">Volver a jugar</ion-button>
 
   </div>
 </ion-content>
