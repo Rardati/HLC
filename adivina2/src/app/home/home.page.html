@@ -1,20 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Adivina 
+      Adivina ¿Par o Impar?
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="ion-padding">
+    <ion-input type="number" [(ngModel)]="num" placeholder="Introduce un número"></ion-input>
+    <p>{{ resultado }}</p>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button expand="block" (click)="compruebaSiEsPar()">Comprobar</ion-button>
+    <ion-button expand="block" color="medium" (click)="reiniciar()">Reiniciar</ion-button>
   </div>
 </ion-content>
