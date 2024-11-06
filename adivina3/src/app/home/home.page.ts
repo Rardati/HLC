@@ -26,6 +26,7 @@ export class HomePage {
     return paises[Math.floor(Math.random() * paises.length)];
   }
 
+  
   compruebaPais() {
     if (this.pais.trim().toLowerCase() === this.paisSecreto.nombre.toLowerCase()) {
       this.acierto = true;
