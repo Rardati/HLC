@@ -26,7 +26,7 @@ export class HomePage {
     return paises[Math.floor(Math.random() * paises.length)];
   }
 
-  
+
   compruebaPais() {
     if (this.pais.trim().toLowerCase() === this.paisSecreto.nombre.toLowerCase()) {
       this.acierto = true;
@@ -43,4 +43,6 @@ export class HomePage {
     this.paisSecreto = this.paisAleatorio();
     console.log("El país secreto es: " + this.paisSecreto.nombre);
   }
+
+  
 }

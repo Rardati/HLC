@@ -13,7 +13,7 @@
 
     <ion-card *ngIf="acierto">
       <ion-card-header>
-        ¡¡¡ENHORABUENA!!!
+        ¿¡¡¡ENHORABUENA!!!!
       </ion-card-header>
       <ion-card-content>
         Has acertado, el país secreto es {{ pais }} 
@@ -24,5 +24,5 @@
     <ion-button class="boton" expand="block" *ngIf="!acierto" (click)="compruebaPais()">Adivina</ion-button>
     <ion-button expand="block" *ngIf="acierto" (click)="reiniciar()">Volver a jugar</ion-button>
   </div>
-  
+
 </ion-content>
